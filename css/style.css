@@ -1,0 +1,506 @@
+/* =========================================================================================
+                          root and comon css style
+========================================================================================== */
+/* ======== google font ========= */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.d_flex {
+  display: flex;
+}
+
+.d_grid {
+  display: grid;
+}
+
+.container {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+body {
+  background: var(--main_bg);
+}
+
+.comon_btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.4rem;
+  background: var(--btn_color);
+  font-weight: 600;
+  width: fit-content;
+  box-shadow: inset 0 0 0 0 #f9e506;
+  transition: ease-in-out 0.7s;
+}
+.comon_btn:hover {
+  box-shadow: inset 300px 0 0 0 #f9e506;
+  color: black;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  width: 700;
+}
+
+/* ================ css variable ======================= */
+
+:root {
+  --main_bg: #fefbf6;
+  --header_bg: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  --btn_color: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  --comon_header_color: #abc9ff;
+}
+
+/* =========================================================================================
+                          Header Start
+========================================================================================== */
+#mainHeader {
+  width: 90vw;
+  height: 100vh;
+  background: var(--header_bg);
+  border-radius: 1rem;
+  margin: 1rem auto;
+}
+
+.header_contant {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left_contant {
+  width: 40%;
+}
+
+.left_contant h1 {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  color: #fefbf6;
+  width: 800;
+}
+
+.left_contant p {
+  color: #d0c9c0;
+  margin-bottom: 2rem;
+}
+
+.watch_live_btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+}
+
+.watch_live_btn img {
+  width: 1.4rem;
+}
+
+.right_contant {
+  margin: 0;
+  width: 60%;
+  overflow: hidden;
+}
+
+.right_contant img {
+  margin-left: 5rem;
+  margin-top: 3rem;
+  max-width: 80%;
+  height: auto;
+}
+/* =========================================================================================
+                          Header End
+========================================================================================== */
+
+/* =========================================================================================
+                          Bloge Section Start
+========================================================================================== */
+#blogSection {
+  width: 100%;
+  padding: 2rem;
+}
+
+.blog_contant {
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.blog_left_menu {
+  width: 30%;
+  display: block;
+  /* position: fixed; */
+  left: 0;
+}
+
+.blog_left_menu ul {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  background: var(--header_bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.blog_left_menu li {
+  background: #fefbf6;
+  text-align: center;
+  padding: 0.5rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  box-shadow: inset 0 0 0 0 #f9e506;
+  transition: ease-in-out 0.7s;
+}
+
+.blog_left_menu li:nth-child(3) {
+  background: tomato;
+}
+
+.blog_left_menu li:hover {
+  box-shadow: inset 300px 0 0 0 #f9e506;
+  color: black;
+}
+
+.blog_left_menu li:hover a {
+  color: #fefbf6;
+}
+
+.blog_left_menu li:visited {
+  background: tomato;
+}
+
+.blog_right_content {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.blog_list {
+  width: 18rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 3px 5px rgba(201, 201, 201, 0.5);
+}
+
+.blog_list img {
+  margin-bottom: 0.5rem;
+}
+
+.blog_list a {
+  border: 1px solid black;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.2rem;
+  transition: 0.5s;
+}
+
+.blog_list a:hover {
+  background: whitesmoke;
+  color: black;
+}
+
+.blog_list h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.blog_icon {
+  cursor: pointer;
+  display: flex;
+  padding-left: 1.5rem;
+  padding-right: 8rem;
+  justify-content: space-between;
+}
+
+.blog_icon img {
+  width: 2rem;
+}
+/* =========================================================================================
+                          Blog Section End
+========================================================================================== */
+
+/* =========================================================================================
+                         UpComing Match Start
+========================================================================================== */
+.upcoming_match {
+  height: 14rem;
+}
+
+.flag_bg {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.upcoming_match h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.upcoming_match p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #696661;
+}
+
+.flag_bg img {
+  width: 8rem;
+}
+
+/* =========================================================================================
+                        UpComing Match End
+========================================================================================== */
+
+/* =========================================================================================
+                          Footer Start
+========================================================================================== */
+#mainFooter {
+  width: 100%;
+  height: auto;
+  background: var(--header_bg);
+}
+
+.logo_part {
+  padding: 1rem;
+}
+
+.logo_part a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_part a span {
+  font-size: 1.5rem;
+  color: #fefbf6;
+  font-weight: bold;
+}
+
+.logo_part img {
+  width: 5rem;
+}
+
+.footer_menu_icon {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.footer_menu_list ul {
+  padding: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_menu_list ul > li > a {
+  color: #fefbf6;
+  font-weight: bold;
+  transition: all 1s;
+}
+
+.footer_menu_list ul > li > a:hover {
+  color: black;
+}
+
+.social_icon > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social_icon img {
+  margin-top: 1rem;
+  width: 1.5rem;
+}
+/* =========================================================================================
+                          Footer End
+========================================================================================== */
+
+/* =========================================================================================
+                          Css Media Quary
+========================================================================================== */
+
+/* =========================================================================================
+                          Small devices (landscape phones, 576px and up)
+========================================================================================== */
+
+@media screen and (max-width: 576px) {
+  /* header section */
+  #mainHeader {
+    height: auto;
+    padding: 0;
+  }
+
+  #mainHeader .header_contant {
+    flex-direction: column !important;
+  }
+
+  .left_contant {
+    width: 100%;
+  }
+
+  .left_contant h1 {
+    margin-top: 1rem;
+    font-size: 1.5rem !important;
+    font-weight: 800;
+  }
+
+  .left_contant p {
+    font-size: 0.8rem;
+    color: whitesmoke;
+  }
+  .right_contant {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .right_contant img {
+    width: 350px;
+  }
+  /* header section end */
+  /* blog section start */
+  .blog_contant {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blog_left_menu {
+    width: 100%;
+    margin: 0 auto;
+    position: static;
+    padding: 0;
+  }
+
+  .blog_left_menu ul {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+  }
+
+  .blog_left_menu li {
+    background: whitesmoke;
+  }
+
+  .blog_right_content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* blog section end */
+
+  /* Footer section start */
+  footer {
+    height: max-content;
+    padding-bottom: 1rem;
+  }
+  .footer_menu_list ul {
+    flex-direction: column;
+  }
+
+  /* Footer section end */
+}
+
+/* =========================================================================================
+                          Medium devices (tablets, 768px and up)
+========================================================================================== */
+@media screen and (min-width: 720px) and (max-width: 959px) {
+  /* header section start */
+  #mainHeader {
+    height: max-content;
+    padding-bottom: 1rem;
+  }
+
+  .left_contant {
+    width: 60%;
+  }
+  .left_contant h1 {
+    width: 150%;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .left_contant p {
+    width: 165%;
+    font-size: 0.8rem;
+  }
+
+  .right_contant {
+    width: auto;
+  }
+  .right_contant img {
+    width: 100%;
+  }
+  /* header section end */
+  /* blog section start */
+  .blog_contant {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blog_left_menu {
+    width: 100%;
+    margin: 0 auto;
+    position: static;
+    padding: 0;
+  }
+
+  .blog_left_menu ul {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .blog_left_menu li {
+    background: whitesmoke;
+  }
+
+  .blog_right_content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* blog section end */
+  /* footer section start */
+  .footer_menu_list ul > li > a {
+    font-size: 0.6rem;
+  }
+
+  /* footer section end */
+}
