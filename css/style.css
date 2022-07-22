@@ -245,6 +245,10 @@ h1 {
 .blog_icon img {
   width: 2rem;
 }
+
+#veiw-btn{
+  display: none;
+}
 /* =========================================================================================
                           Blog Section End
 ========================================================================================== */
@@ -495,6 +499,13 @@ h1 {
   .blog_right_content {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+    #veiw-btn{
+    text-align: center;
+    height: max-content;
+    display:inline-block;
+  }
+
 
   /* blog section end */
   /* footer section start */
